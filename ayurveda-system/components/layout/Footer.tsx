@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Visual Overlay: Enhances contrast and maintains branding consistency */}
         <div className="absolute inset-0 bg-emerald-950/80 backdrop-blur-[2px]"></div>
 
-        <div className="relative z-20 mx-auto max-w-7xl px-4 py-48 sm:px-6 lg:px-8">
+        <div className="relative z-20 mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-3 lg:grid-cols-4">
 
             {/* Branding Column: Mission Statement */}

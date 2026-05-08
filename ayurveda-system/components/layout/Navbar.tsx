@@ -14,28 +14,33 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { Leaf, Database, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/70 backdrop-blur-md dark:bg-black/70">
+    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/70 backdrop-blur-md dark:bg-[#0a101f]/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">
-                Bio-Heritage AI
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative">
+                <Leaf className="h-6 w-6 text-emerald-500 group-hover:rotate-12 transition-transform duration-300" />
+                <Database className="h-3 w-3 text-amber-500 absolute -bottom-1 -right-1" />
+              </div>
+              <span className="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">
+                Bio-Heritage <span className="text-emerald-500">AI</span>
               </span>
             </Link>
           </div>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/" className="text-sm font-medium hover:text-emerald-500 transition-colors">Home</Link>
-              <Link href="/about" className="text-sm font-medium hover:text-emerald-500 transition-colors">About</Link>
-              <Link href="/research" className="text-sm font-medium hover:text-emerald-500 transition-colors">Research</Link>
-              <Link href="/contact" className="text-sm font-medium hover:text-emerald-500 transition-colors">Contact</Link>
+              <Link href="/" className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-emerald-500 dark:hover:text-amber-500 transition-colors">Home</Link>
+              <Link href="/about" className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-emerald-500 dark:hover:text-amber-500 transition-colors">About</Link>
+              <Link href="/research" className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-emerald-500 dark:hover:text-amber-500 transition-colors">Research</Link>
+              <Link href="/contact" className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-emerald-500 dark:hover:text-amber-500 transition-colors">Contact</Link>
             </div>
           </div>
 
@@ -46,13 +51,9 @@ export default function Navbar() {
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                <X className="h-6 w-6" />
               ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+                <Menu className="h-6 w-6" />
               )}
             </button>
           </div>

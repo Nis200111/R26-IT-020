@@ -1,20 +1,38 @@
 export default function ExplainSection() {
   return (
-    <section className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm transition-all hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
-      <div className="flex flex-col gap-4">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400">
+    <section 
+      tabIndex={0}
+      className="group relative cursor-pointer rounded-xl border border-zinc-800/50 bg-[#0a101f] p-8 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:border-amber-500/30 hover:bg-[#0d1526] hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] focus:outline-none focus:ring-1 focus:ring-amber-500/50"
+    >
+      <div className="flex flex-col gap-6">
+        <div className="flex items-center gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-zinc-800 bg-zinc-900/50 text-zinc-400 group-hover:border-amber-500/50 group-hover:text-amber-500 transition-all duration-500">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold">Explainability Interface</h2>
+          <h2 className="text-xl font-semibold tracking-tight text-zinc-100 group-hover:text-amber-500 transition-colors duration-500">
+            Explainable AI (XAI)
+          </h2>
         </div>
-        <p className="text-zinc-600 dark:text-zinc-400">
-          Member 3: Integrate your AI Decision Explainability and Logic Visualization UI here.
+
+        <p className="text-sm leading-relaxed text-zinc-400 group-hover:text-zinc-300">
+          Advanced explainability module providing transparency into AI decision-making processes for medical practitioners and researchers.
         </p>
-        <div className="mt-4 rounded-lg bg-zinc-50 p-6 dark:bg-black/40">
-          <p className="text-sm italic text-zinc-500">Add your explanation charts or heatmaps...</p>
+
+        <div className="space-y-3">
+          <div className="flex items-start gap-3">
+            <svg className="mt-1 h-3.5 w-3.5 shrink-0 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 group-hover:text-zinc-300">LOGIC PATH VISUALIZATION</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <svg className="mt-1 h-3.5 w-3.5 shrink-0 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 group-hover:text-zinc-300">ATTRIBUTION ANALYSIS</span>
+          </div>
         </div>
       </div>
     </section>

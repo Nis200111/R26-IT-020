@@ -41,20 +41,33 @@ export default function Home() {
       {/* 
         Team Contributions Section: 
         Displays the 4 specialized AI modules developed by each team member.
+        Enhanced with a premium dark heritage background.
       */}
-      <section className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Core Framework Components</h2>
-          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-            Developed by our 4-member research team, each specializing in a critical AI domain.
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <RagSection />
-          <IntentSection />
-          <ExplainSection />
-          <GatewaySection />
+      <section className="relative overflow-hidden bg-[#0a101f] py-32 text-white">
+        {/* Background Image Overlay */}
+        <div 
+          className="absolute inset-0 z-0 opacity-10 bg-cover bg-center bg-no-repeat grayscale"
+          style={{ backgroundImage: 'url("/ayurveda-bg.png")' }}
+        ></div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0a101f] via-transparent to-[#0a101f]"></div>
+
+        <div className="container relative z-10 mx-auto px-4">
+          <div className="mb-20 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Core Framework Components
+            </h2>
+            <div className="mx-auto mt-6 h-1 w-20 bg-amber-500"></div>
+            <p className="mt-8 text-xl text-zinc-400 max-w-2xl mx-auto">
+              Specialized AI modules developed for the preservation and interpretation of Sri Lankan indigenous medical heritage.
+            </p>
+          </div>
+          
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2">
+            <RagSection />
+            <IntentSection />
+            <ExplainSection />
+            <GatewaySection />
+          </div>
         </div>
       </section>
 
