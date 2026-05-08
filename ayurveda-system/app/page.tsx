@@ -8,7 +8,7 @@
 
 import RagSection from "@/components/features/member1/RagSection";
 import IntentSection from "@/components/features/member2/IntentSection";
-import ExplainSection from "@/components/features/member3/ExplainSection";
+import ExplainSection from "@/components/features/member3(Sahan)/ExplainSection";
 import GatewaySection from "@/components/features/member4/GatewaySection";
 
 export default function Home() {
@@ -43,31 +43,19 @@ export default function Home() {
         Displays the 4 specialized AI modules developed by each team member.
         Enhanced with a premium dark heritage background.
       */}
-      <section className="relative overflow-hidden bg-[#0a101f] py-32 text-white">
-        {/* Background Image Overlay */}
-        <div 
-          className="absolute inset-0 z-0 opacity-10 bg-cover bg-center bg-no-repeat grayscale"
-          style={{ backgroundImage: 'url("/ayurveda-bg.png")' }}
-        ></div>
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0a101f] via-transparent to-[#0a101f]"></div>
-
-        <div className="container relative z-10 mx-auto px-4">
-          <div className="mb-20 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Core Framework Components
-            </h2>
-            <div className="mx-auto mt-6 h-1 w-20 bg-amber-500"></div>
-            <p className="mt-8 text-xl text-zinc-400 max-w-2xl mx-auto">
-              Specialized AI modules developed for the preservation and interpretation of Sri Lankan indigenous medical heritage.
-            </p>
-          </div>
-          
-          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2">
-            <RagSection />
-            <IntentSection />
-            <ExplainSection />
-            <GatewaySection />
-          </div>
+      <section className="container mx-auto px-4">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Core Framework Components</h2>
+          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+            Developed by our 4-member research team, each specializing in a critical AI domain.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <RagSection />
+          <IntentSection />
+          <ExplainSection />
+          <GatewaySection />
         </div>
       </section>
 
@@ -76,8 +64,8 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold">Research Objective</h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-zinc-600 dark:text-zinc-400">
-            Our goal is to create a bridge between ancient wisdom and modern technology, 
-            ensuring that the heritage of Sri Lankan Indigenous Medicine (Ayurveda/Deshiya Chikitsa) 
+            Our goal is to create a bridge between ancient wisdom and modern technology,
+            ensuring that the heritage of Sri Lankan Indigenous Medicine (Ayurveda/Deshiya Chikitsa)
             is accurately documented and accessible through cutting-edge AI.
           </p>
         </div>
