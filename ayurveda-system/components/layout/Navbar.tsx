@@ -1,0 +1,75 @@
+/**
+ * Navbar Component
+ * 
+ * Provides global navigation for the application with a high-performance 
+ * glassmorphism effect (backdrop-blur) and mobile-responsive menu logic.
+ * 
+ * Features:
+ * - Responsive design with mobile-first menu overlay.
+ * - Dynamic backdrop filtering for modern aesthetics.
+ * - Optimized link transitions for enhanced UX.
+ */
+
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-white/70 backdrop-blur-md dark:bg-black/70">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center gap-2">
+              <span className="text-xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">
+                Bio-Heritage AI
+              </span>
+            </Link>
+          </div>
+          
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-8">
+              <Link href="/" className="text-sm font-medium hover:text-emerald-500 transition-colors">Home</Link>
+              <Link href="/about" className="text-sm font-medium hover:text-emerald-500 transition-colors">About</Link>
+              <Link href="/research" className="text-sm font-medium hover:text-emerald-500 transition-colors">Research</Link>
+              <Link href="/contact" className="text-sm font-medium hover:text-emerald-500 transition-colors">Contact</Link>
+            </div>
+          </div>
+
+          <div className="md:hidden">
+            <button 
+              onClick={() => setIsOpen(!isOpen)}
+              className="inline-flex items-center justify-center rounded-md p-2 text-zinc-400 hover:bg-zinc-100 hover:text-zinc-500 focus:outline-none dark:hover:bg-zinc-800"
+            >
+              <span className="sr-only">Open main menu</span>
+              {isOpen ? (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="md:hidden border-t border-white/10 bg-white dark:bg-black">
+          <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <Link href="/" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900">Home</Link>
+            <Link href="/about" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900">About</Link>
+            <Link href="/research" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900">Research</Link>
+            <Link href="/contact" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900">Contact</Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}
