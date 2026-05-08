@@ -8,7 +8,7 @@
 
 import RagSection from "@/components/features/member1/RagSection";
 import IntentSection from "@/components/features/member2/IntentSection";
-import ExplainSection from "@/components/features/member3/ExplainSection";
+import ExplainSection from "@/components/features/member3(Sahan)/ExplainSection";
 import GatewaySection from "@/components/features/member4/GatewaySection";
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
             Developed by our 4-member research team, each specializing in a critical AI domain.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <RagSection />
           <IntentSection />
@@ -63,8 +63,8 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold">Research Objective</h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg text-zinc-600 dark:text-zinc-400">
-            Our goal is to create a bridge between ancient wisdom and modern technology, 
-            ensuring that the heritage of Sri Lankan Indigenous Medicine (Ayurveda/Deshiya Chikitsa) 
+            Our goal is to create a bridge between ancient wisdom and modern technology,
+            ensuring that the heritage of Sri Lankan Indigenous Medicine (Ayurveda/Deshiya Chikitsa)
             is accurately documented and accessible through cutting-edge AI.
           </p>
         </div>
