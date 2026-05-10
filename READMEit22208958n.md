@@ -72,6 +72,4 @@ All outputs will be saved in the working directory.
 
 ---
 
-**Authors:** Yashini Hettiarachchi et al.
 
-**Repository:** https://github.com/Yashini-Hettiarachchi/medical-plant-forecasting-

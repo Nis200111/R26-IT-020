@@ -1,0 +1,4 @@
+temperature_2m_mean Train Accuracy: 95.37%
+temperature_2m_mean Test Accuracy: 95.01%
+precipitation_sum Train Accuracy: -311.16%
+precipitation_sum Test Accuracy: -500.31%

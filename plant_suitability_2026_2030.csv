@@ -1,0 +1,616 @@
+Year,Habitat_Region,Avg_Daily_Precip,Status,Plant_Species_Count
+2026,Dry,25.5,Unsuitable,173
+2026, Intermediate,25.5,Unsuitable,241
+2026, Wet lowlands,25.5,Suitable,2
+2026, Wet,25.5,Suitable,20
+2026,Wet,25.5,Suitable,68
+2026, Upcountry,25.5,Stable,8
+2026, Dry home gardens,25.5,Unsuitable,2
+2026, Dry zone margins,25.5,Unsuitable,1
+2026,Intermediate,25.5,Unsuitable,9
+2026, Dry,25.5,Unsuitable,18
+2026, Wet home gardens,25.5,Suitable,3
+2026, Arid,25.5,Stable,6
+2026,Dry tank-bunds,25.5,Unsuitable,3
+2026, cultivated,25.5,Stable,1
+2026,Dry grasslands,25.5,Unsuitable,4
+2026,Coastal,25.5,Likely Suitable,17
+2026,Intermediate riverbanks,25.5,Unsuitable,2
+2026, Dry riverine,25.5,Unsuitable,2
+2026,Coastal estuaries,25.5,Likely Suitable,3
+2026, lagoons,25.5,Stable,2
+2026,Coastal wetlands,25.5,Suitable,2
+2026, estuaries,25.5,Stable,2
+2026,Coastal mangroves,25.5,Likely Suitable,4
+2026,Coastal saline zones,25.5,Likely Suitable,2
+2026,Wet-Intermediate transitions,25.5,Suitable,2
+2026, low-country,25.5,Stable,2
+2026,Wet and Intermediate forests,25.5,Suitable,2
+2026,Lowland rainforest margins,25.5,Stable,2
+2026, roadsides/grasslands,25.5,Stable,1
+2026, cultivated and wild margins,25.5,Stable,1
+2026, home-garden margins,25.5,Stable,2
+2026, Wet forest margins,25.5,Suitable,2
+2026, scrublands/home fences,25.5,Stable,1
+2026, widely cultivated/home gardens,25.5,Stable,1
+2026, riverine and deciduous zones,25.5,Stable,1
+2026, Intermediate scrub and forest edges,25.5,Unsuitable,1
+2026, Intermediate lowlands,25.5,Unsuitable,2
+2026,Upcountry,25.5,Stable,5
+2026, Intermediate montane margins,25.5,Unsuitable,1
+2026, Intermediate forest margins,25.5,Unsuitable,2
+2026, Intermediate scrublands,25.5,Unsuitable,2
+2026, Intermediate forest edges,25.5,Unsuitable,1
+2026,Wet-zone forest margins,25.5,Suitable,1
+2026, Intermediate grasslands,25.5,Unsuitable,2
+2026, riverine margins,25.5,Stable,1
+2026,Wetlands,25.5,Suitable,11
+2026, paddy margins,25.5,Stable,3
+2026, lowlands,25.5,Stable,1
+2026,Tanks,25.5,Stable,2
+2026, ponds,25.5,Stable,3
+2026, slow freshwater bodies,25.5,Stable,1
+2026,Lakes,25.5,Stable,2
+2026, tanks,25.5,Stable,1
+2026, freshwater wetlands,25.5,Suitable,1
+2026,Marshes,25.5,Stable,4
+2026, stream edges,25.5,Stable,1
+2026, wet lowlands,25.5,Suitable,1
+2026, scrub margins,25.5,Stable,1
+2026, Wet forest edges,25.5,Suitable,1
+2026, Intermediate home gardens,25.5,Unsuitable,1
+2026, canals,25.5,Stable,2
+2026, paddy fields,25.5,Stable,1
+2026, marsh edges,25.5,Stable,1
+2026,Shallow freshwater wetlands,25.5,Suitable,1
+2026, Intermediate disturbed soils,25.5,Unsuitable,1
+2026,Wet and Intermediate zones,25.5,Suitable,5
+2026,Dry and Intermediate zones,25.5,Unsuitable,5
+2026,Cultivated,25.5,Stable,19
+2026, home gardens,25.5,Stable,2
+2026,Dry zone forests,25.5,Unsuitable,4
+2026,Intermediate and Dry zones,25.5,Unsuitable,3
+2026,Wet zone,25.5,Suitable,2
+2026,Upcountry wet zone,25.5,Suitable,2
+2026,Home gardens,25.5,Stable,8
+2026,Grasslands,25.5,Stable,3
+2026, common weed,25.5,Stable,1
+2026,Dry zone,25.5,Unsuitable,5
+2026,Dry and Arid zones,25.5,Unsuitable,1
+2026,Common weed,25.5,Stable,1
+2026,Lowland forests,25.5,Stable,1
+2026,Common grass,25.5,Stable,1
+2026,Coastal and Intermediate,25.5,Unsuitable,1
+2026,Moist lowlands,25.5,Stable,1
+2026,Coastal areas,25.5,Likely Suitable,1
+2026,Lowlands,25.5,Stable,1
+2026,Mangrove areas,25.5,Stable,1
+2026,Intermediate and Wet zones,25.5,Suitable,1
+2026,Wet zone plantations,25.5,Suitable,1
+2026,Wet zone forests,25.5,Suitable,1
+2026,Coastal and Lowland,25.5,Likely Suitable,1
+2026, marshes,25.5,Stable,1
+2026,Dry forests,25.5,Unsuitable,4
+2026,Dry scrublands,25.5,Unsuitable,8
+2026,Cultivated grains,25.5,Stable,1
+2026,Wet forests,25.5,Suitable,6
+2026,Wet & Intermediate,25.5,Suitable,3
+2026,Dry & Intermediate,25.5,Unsuitable,2
+2026,Cultivated gardens,25.5,Stable,4
+2026, wetlands,25.5,Suitable,1
+2026, streams,25.5,Stable,1
+2026,Forest edges,25.5,Stable,3
+2026,Forest margins,25.5,Stable,1
+2026,Scrublands,25.5,Stable,1
+2026,Wet lowlands,25.5,Suitable,2
+2026,Riverine margins,25.5,Stable,1
+2026,Riverine zones,25.5,Stable,1
+2026,Wet forest margins,25.5,Suitable,1
+2026,Coastal lowlands,25.5,Likely Suitable,1
+2026,Rainforest margins,25.5,Stable,1
+2026,Paddy margins,25.5,Stable,1
+2026,Disturbed soils,25.5,Stable,1
+2026, Wet gardens,25.5,Suitable,1
+2026,Riverbanks,25.5,Stable,1
+2026,Dry/intermediate scrublands,25.5,Unsuitable,4
+2026,"Dry zone, roadsides",25.5,Unsuitable,1
+2026,Wet/intermediate marshlands,25.5,Suitable,1
+2026,Dry/intermediate,25.5,Unsuitable,1
+2026,Wet/intermediate home gardens,25.5,Suitable,1
+2026,Dry/intermediate home gardens,25.5,Unsuitable,3
+2026,Wet/intermediate coastal zones,25.5,Suitable,1
+2026,Dry/intermediate forests,25.5,Unsuitable,2
+2026,Wet/intermediate,25.5,Suitable,1
+2026,Coastal/wet zones,25.5,Suitable,1
+2027,Dry,25.35,Unsuitable,173
+2027, Intermediate,25.35,Unsuitable,241
+2027, Wet lowlands,25.35,Suitable,2
+2027, Wet,25.35,Suitable,20
+2027,Wet,25.35,Suitable,68
+2027, Upcountry,25.35,Stable,8
+2027, Dry home gardens,25.35,Unsuitable,2
+2027, Dry zone margins,25.35,Unsuitable,1
+2027,Intermediate,25.35,Unsuitable,9
+2027, Dry,25.35,Unsuitable,18
+2027, Wet home gardens,25.35,Suitable,3
+2027, Arid,25.35,Stable,6
+2027,Dry tank-bunds,25.35,Unsuitable,3
+2027, cultivated,25.35,Stable,1
+2027,Dry grasslands,25.35,Unsuitable,4
+2027,Coastal,25.35,Likely Suitable,17
+2027,Intermediate riverbanks,25.35,Unsuitable,2
+2027, Dry riverine,25.35,Unsuitable,2
+2027,Coastal estuaries,25.35,Likely Suitable,3
+2027, lagoons,25.35,Stable,2
+2027,Coastal wetlands,25.35,Suitable,2
+2027, estuaries,25.35,Stable,2
+2027,Coastal mangroves,25.35,Likely Suitable,4
+2027,Coastal saline zones,25.35,Likely Suitable,2
+2027,Wet-Intermediate transitions,25.35,Suitable,2
+2027, low-country,25.35,Stable,2
+2027,Wet and Intermediate forests,25.35,Suitable,2
+2027,Lowland rainforest margins,25.35,Stable,2
+2027, roadsides/grasslands,25.35,Stable,1
+2027, cultivated and wild margins,25.35,Stable,1
+2027, home-garden margins,25.35,Stable,2
+2027, Wet forest margins,25.35,Suitable,2
+2027, scrublands/home fences,25.35,Stable,1
+2027, widely cultivated/home gardens,25.35,Stable,1
+2027, riverine and deciduous zones,25.35,Stable,1
+2027, Intermediate scrub and forest edges,25.35,Unsuitable,1
+2027, Intermediate lowlands,25.35,Unsuitable,2
+2027,Upcountry,25.35,Stable,5
+2027, Intermediate montane margins,25.35,Unsuitable,1
+2027, Intermediate forest margins,25.35,Unsuitable,2
+2027, Intermediate scrublands,25.35,Unsuitable,2
+2027, Intermediate forest edges,25.35,Unsuitable,1
+2027,Wet-zone forest margins,25.35,Suitable,1
+2027, Intermediate grasslands,25.35,Unsuitable,2
+2027, riverine margins,25.35,Stable,1
+2027,Wetlands,25.35,Suitable,11
+2027, paddy margins,25.35,Stable,3
+2027, lowlands,25.35,Stable,1
+2027,Tanks,25.35,Stable,2
+2027, ponds,25.35,Stable,3
+2027, slow freshwater bodies,25.35,Stable,1
+2027,Lakes,25.35,Stable,2
+2027, tanks,25.35,Stable,1
+2027, freshwater wetlands,25.35,Suitable,1
+2027,Marshes,25.35,Stable,4
+2027, stream edges,25.35,Stable,1
+2027, wet lowlands,25.35,Suitable,1
+2027, scrub margins,25.35,Stable,1
+2027, Wet forest edges,25.35,Suitable,1
+2027, Intermediate home gardens,25.35,Unsuitable,1
+2027, canals,25.35,Stable,2
+2027, paddy fields,25.35,Stable,1
+2027, marsh edges,25.35,Stable,1
+2027,Shallow freshwater wetlands,25.35,Suitable,1
+2027, Intermediate disturbed soils,25.35,Unsuitable,1
+2027,Wet and Intermediate zones,25.35,Suitable,5
+2027,Dry and Intermediate zones,25.35,Unsuitable,5
+2027,Cultivated,25.35,Stable,19
+2027, home gardens,25.35,Stable,2
+2027,Dry zone forests,25.35,Unsuitable,4
+2027,Intermediate and Dry zones,25.35,Unsuitable,3
+2027,Wet zone,25.35,Suitable,2
+2027,Upcountry wet zone,25.35,Suitable,2
+2027,Home gardens,25.35,Stable,8
+2027,Grasslands,25.35,Stable,3
+2027, common weed,25.35,Stable,1
+2027,Dry zone,25.35,Unsuitable,5
+2027,Dry and Arid zones,25.35,Unsuitable,1
+2027,Common weed,25.35,Stable,1
+2027,Lowland forests,25.35,Stable,1
+2027,Common grass,25.35,Stable,1
+2027,Coastal and Intermediate,25.35,Unsuitable,1
+2027,Moist lowlands,25.35,Stable,1
+2027,Coastal areas,25.35,Likely Suitable,1
+2027,Lowlands,25.35,Stable,1
+2027,Mangrove areas,25.35,Stable,1
+2027,Intermediate and Wet zones,25.35,Suitable,1
+2027,Wet zone plantations,25.35,Suitable,1
+2027,Wet zone forests,25.35,Suitable,1
+2027,Coastal and Lowland,25.35,Likely Suitable,1
+2027, marshes,25.35,Stable,1
+2027,Dry forests,25.35,Unsuitable,4
+2027,Dry scrublands,25.35,Unsuitable,8
+2027,Cultivated grains,25.35,Stable,1
+2027,Wet forests,25.35,Suitable,6
+2027,Wet & Intermediate,25.35,Suitable,3
+2027,Dry & Intermediate,25.35,Unsuitable,2
+2027,Cultivated gardens,25.35,Stable,4
+2027, wetlands,25.35,Suitable,1
+2027, streams,25.35,Stable,1
+2027,Forest edges,25.35,Stable,3
+2027,Forest margins,25.35,Stable,1
+2027,Scrublands,25.35,Stable,1
+2027,Wet lowlands,25.35,Suitable,2
+2027,Riverine margins,25.35,Stable,1
+2027,Riverine zones,25.35,Stable,1
+2027,Wet forest margins,25.35,Suitable,1
+2027,Coastal lowlands,25.35,Likely Suitable,1
+2027,Rainforest margins,25.35,Stable,1
+2027,Paddy margins,25.35,Stable,1
+2027,Disturbed soils,25.35,Stable,1
+2027, Wet gardens,25.35,Suitable,1
+2027,Riverbanks,25.35,Stable,1
+2027,Dry/intermediate scrublands,25.35,Unsuitable,4
+2027,"Dry zone, roadsides",25.35,Unsuitable,1
+2027,Wet/intermediate marshlands,25.35,Suitable,1
+2027,Dry/intermediate,25.35,Unsuitable,1
+2027,Wet/intermediate home gardens,25.35,Suitable,1
+2027,Dry/intermediate home gardens,25.35,Unsuitable,3
+2027,Wet/intermediate coastal zones,25.35,Suitable,1
+2027,Dry/intermediate forests,25.35,Unsuitable,2
+2027,Wet/intermediate,25.35,Suitable,1
+2027,Coastal/wet zones,25.35,Suitable,1
+2028,Dry,25.19,Unsuitable,173
+2028, Intermediate,25.19,Unsuitable,241
+2028, Wet lowlands,25.19,Suitable,2
+2028, Wet,25.19,Suitable,20
+2028,Wet,25.19,Suitable,68
+2028, Upcountry,25.19,Stable,8
+2028, Dry home gardens,25.19,Unsuitable,2
+2028, Dry zone margins,25.19,Unsuitable,1
+2028,Intermediate,25.19,Unsuitable,9
+2028, Dry,25.19,Unsuitable,18
+2028, Wet home gardens,25.19,Suitable,3
+2028, Arid,25.19,Stable,6
+2028,Dry tank-bunds,25.19,Unsuitable,3
+2028, cultivated,25.19,Stable,1
+2028,Dry grasslands,25.19,Unsuitable,4
+2028,Coastal,25.19,Likely Suitable,17
+2028,Intermediate riverbanks,25.19,Unsuitable,2
+2028, Dry riverine,25.19,Unsuitable,2
+2028,Coastal estuaries,25.19,Likely Suitable,3
+2028, lagoons,25.19,Stable,2
+2028,Coastal wetlands,25.19,Suitable,2
+2028, estuaries,25.19,Stable,2
+2028,Coastal mangroves,25.19,Likely Suitable,4
+2028,Coastal saline zones,25.19,Likely Suitable,2
+2028,Wet-Intermediate transitions,25.19,Suitable,2
+2028, low-country,25.19,Stable,2
+2028,Wet and Intermediate forests,25.19,Suitable,2
+2028,Lowland rainforest margins,25.19,Stable,2
+2028, roadsides/grasslands,25.19,Stable,1
+2028, cultivated and wild margins,25.19,Stable,1
+2028, home-garden margins,25.19,Stable,2
+2028, Wet forest margins,25.19,Suitable,2
+2028, scrublands/home fences,25.19,Stable,1
+2028, widely cultivated/home gardens,25.19,Stable,1
+2028, riverine and deciduous zones,25.19,Stable,1
+2028, Intermediate scrub and forest edges,25.19,Unsuitable,1
+2028, Intermediate lowlands,25.19,Unsuitable,2
+2028,Upcountry,25.19,Stable,5
+2028, Intermediate montane margins,25.19,Unsuitable,1
+2028, Intermediate forest margins,25.19,Unsuitable,2
+2028, Intermediate scrublands,25.19,Unsuitable,2
+2028, Intermediate forest edges,25.19,Unsuitable,1
+2028,Wet-zone forest margins,25.19,Suitable,1
+2028, Intermediate grasslands,25.19,Unsuitable,2
+2028, riverine margins,25.19,Stable,1
+2028,Wetlands,25.19,Suitable,11
+2028, paddy margins,25.19,Stable,3
+2028, lowlands,25.19,Stable,1
+2028,Tanks,25.19,Stable,2
+2028, ponds,25.19,Stable,3
+2028, slow freshwater bodies,25.19,Stable,1
+2028,Lakes,25.19,Stable,2
+2028, tanks,25.19,Stable,1
+2028, freshwater wetlands,25.19,Suitable,1
+2028,Marshes,25.19,Stable,4
+2028, stream edges,25.19,Stable,1
+2028, wet lowlands,25.19,Suitable,1
+2028, scrub margins,25.19,Stable,1
+2028, Wet forest edges,25.19,Suitable,1
+2028, Intermediate home gardens,25.19,Unsuitable,1
+2028, canals,25.19,Stable,2
+2028, paddy fields,25.19,Stable,1
+2028, marsh edges,25.19,Stable,1
+2028,Shallow freshwater wetlands,25.19,Suitable,1
+2028, Intermediate disturbed soils,25.19,Unsuitable,1
+2028,Wet and Intermediate zones,25.19,Suitable,5
+2028,Dry and Intermediate zones,25.19,Unsuitable,5
+2028,Cultivated,25.19,Stable,19
+2028, home gardens,25.19,Stable,2
+2028,Dry zone forests,25.19,Unsuitable,4
+2028,Intermediate and Dry zones,25.19,Unsuitable,3
+2028,Wet zone,25.19,Suitable,2
+2028,Upcountry wet zone,25.19,Suitable,2
+2028,Home gardens,25.19,Stable,8
+2028,Grasslands,25.19,Stable,3
+2028, common weed,25.19,Stable,1
+2028,Dry zone,25.19,Unsuitable,5
+2028,Dry and Arid zones,25.19,Unsuitable,1
+2028,Common weed,25.19,Stable,1
+2028,Lowland forests,25.19,Stable,1
+2028,Common grass,25.19,Stable,1
+2028,Coastal and Intermediate,25.19,Unsuitable,1
+2028,Moist lowlands,25.19,Stable,1
+2028,Coastal areas,25.19,Likely Suitable,1
+2028,Lowlands,25.19,Stable,1
+2028,Mangrove areas,25.19,Stable,1
+2028,Intermediate and Wet zones,25.19,Suitable,1
+2028,Wet zone plantations,25.19,Suitable,1
+2028,Wet zone forests,25.19,Suitable,1
+2028,Coastal and Lowland,25.19,Likely Suitable,1
+2028, marshes,25.19,Stable,1
+2028,Dry forests,25.19,Unsuitable,4
+2028,Dry scrublands,25.19,Unsuitable,8
+2028,Cultivated grains,25.19,Stable,1
+2028,Wet forests,25.19,Suitable,6
+2028,Wet & Intermediate,25.19,Suitable,3
+2028,Dry & Intermediate,25.19,Unsuitable,2
+2028,Cultivated gardens,25.19,Stable,4
+2028, wetlands,25.19,Suitable,1
+2028, streams,25.19,Stable,1
+2028,Forest edges,25.19,Stable,3
+2028,Forest margins,25.19,Stable,1
+2028,Scrublands,25.19,Stable,1
+2028,Wet lowlands,25.19,Suitable,2
+2028,Riverine margins,25.19,Stable,1
+2028,Riverine zones,25.19,Stable,1
+2028,Wet forest margins,25.19,Suitable,1
+2028,Coastal lowlands,25.19,Likely Suitable,1
+2028,Rainforest margins,25.19,Stable,1
+2028,Paddy margins,25.19,Stable,1
+2028,Disturbed soils,25.19,Stable,1
+2028, Wet gardens,25.19,Suitable,1
+2028,Riverbanks,25.19,Stable,1
+2028,Dry/intermediate scrublands,25.19,Unsuitable,4
+2028,"Dry zone, roadsides",25.19,Unsuitable,1
+2028,Wet/intermediate marshlands,25.19,Suitable,1
+2028,Dry/intermediate,25.19,Unsuitable,1
+2028,Wet/intermediate home gardens,25.19,Suitable,1
+2028,Dry/intermediate home gardens,25.19,Unsuitable,3
+2028,Wet/intermediate coastal zones,25.19,Suitable,1
+2028,Dry/intermediate forests,25.19,Unsuitable,2
+2028,Wet/intermediate,25.19,Suitable,1
+2028,Coastal/wet zones,25.19,Suitable,1
+2029,Dry,25.04,Unsuitable,173
+2029, Intermediate,25.04,Unsuitable,241
+2029, Wet lowlands,25.04,Suitable,2
+2029, Wet,25.04,Suitable,20
+2029,Wet,25.04,Suitable,68
+2029, Upcountry,25.04,Stable,8
+2029, Dry home gardens,25.04,Unsuitable,2
+2029, Dry zone margins,25.04,Unsuitable,1
+2029,Intermediate,25.04,Unsuitable,9
+2029, Dry,25.04,Unsuitable,18
+2029, Wet home gardens,25.04,Suitable,3
+2029, Arid,25.04,Stable,6
+2029,Dry tank-bunds,25.04,Unsuitable,3
+2029, cultivated,25.04,Stable,1
+2029,Dry grasslands,25.04,Unsuitable,4
+2029,Coastal,25.04,Likely Suitable,17
+2029,Intermediate riverbanks,25.04,Unsuitable,2
+2029, Dry riverine,25.04,Unsuitable,2
+2029,Coastal estuaries,25.04,Likely Suitable,3
+2029, lagoons,25.04,Stable,2
+2029,Coastal wetlands,25.04,Suitable,2
+2029, estuaries,25.04,Stable,2
+2029,Coastal mangroves,25.04,Likely Suitable,4
+2029,Coastal saline zones,25.04,Likely Suitable,2
+2029,Wet-Intermediate transitions,25.04,Suitable,2
+2029, low-country,25.04,Stable,2
+2029,Wet and Intermediate forests,25.04,Suitable,2
+2029,Lowland rainforest margins,25.04,Stable,2
+2029, roadsides/grasslands,25.04,Stable,1
+2029, cultivated and wild margins,25.04,Stable,1
+2029, home-garden margins,25.04,Stable,2
+2029, Wet forest margins,25.04,Suitable,2
+2029, scrublands/home fences,25.04,Stable,1
+2029, widely cultivated/home gardens,25.04,Stable,1
+2029, riverine and deciduous zones,25.04,Stable,1
+2029, Intermediate scrub and forest edges,25.04,Unsuitable,1
+2029, Intermediate lowlands,25.04,Unsuitable,2
+2029,Upcountry,25.04,Stable,5
+2029, Intermediate montane margins,25.04,Unsuitable,1
+2029, Intermediate forest margins,25.04,Unsuitable,2
+2029, Intermediate scrublands,25.04,Unsuitable,2
+2029, Intermediate forest edges,25.04,Unsuitable,1
+2029,Wet-zone forest margins,25.04,Suitable,1
+2029, Intermediate grasslands,25.04,Unsuitable,2
+2029, riverine margins,25.04,Stable,1
+2029,Wetlands,25.04,Suitable,11
+2029, paddy margins,25.04,Stable,3
+2029, lowlands,25.04,Stable,1
+2029,Tanks,25.04,Stable,2
+2029, ponds,25.04,Stable,3
+2029, slow freshwater bodies,25.04,Stable,1
+2029,Lakes,25.04,Stable,2
+2029, tanks,25.04,Stable,1
+2029, freshwater wetlands,25.04,Suitable,1
+2029,Marshes,25.04,Stable,4
+2029, stream edges,25.04,Stable,1
+2029, wet lowlands,25.04,Suitable,1
+2029, scrub margins,25.04,Stable,1
+2029, Wet forest edges,25.04,Suitable,1
+2029, Intermediate home gardens,25.04,Unsuitable,1
+2029, canals,25.04,Stable,2
+2029, paddy fields,25.04,Stable,1
+2029, marsh edges,25.04,Stable,1
+2029,Shallow freshwater wetlands,25.04,Suitable,1
+2029, Intermediate disturbed soils,25.04,Unsuitable,1
+2029,Wet and Intermediate zones,25.04,Suitable,5
+2029,Dry and Intermediate zones,25.04,Unsuitable,5
+2029,Cultivated,25.04,Stable,19
+2029, home gardens,25.04,Stable,2
+2029,Dry zone forests,25.04,Unsuitable,4
+2029,Intermediate and Dry zones,25.04,Unsuitable,3
+2029,Wet zone,25.04,Suitable,2
+2029,Upcountry wet zone,25.04,Suitable,2
+2029,Home gardens,25.04,Stable,8
+2029,Grasslands,25.04,Stable,3
+2029, common weed,25.04,Stable,1
+2029,Dry zone,25.04,Unsuitable,5
+2029,Dry and Arid zones,25.04,Unsuitable,1
+2029,Common weed,25.04,Stable,1
+2029,Lowland forests,25.04,Stable,1
+2029,Common grass,25.04,Stable,1
+2029,Coastal and Intermediate,25.04,Unsuitable,1
+2029,Moist lowlands,25.04,Stable,1
+2029,Coastal areas,25.04,Likely Suitable,1
+2029,Lowlands,25.04,Stable,1
+2029,Mangrove areas,25.04,Stable,1
+2029,Intermediate and Wet zones,25.04,Suitable,1
+2029,Wet zone plantations,25.04,Suitable,1
+2029,Wet zone forests,25.04,Suitable,1
+2029,Coastal and Lowland,25.04,Likely Suitable,1
+2029, marshes,25.04,Stable,1
+2029,Dry forests,25.04,Unsuitable,4
+2029,Dry scrublands,25.04,Unsuitable,8
+2029,Cultivated grains,25.04,Stable,1
+2029,Wet forests,25.04,Suitable,6
+2029,Wet & Intermediate,25.04,Suitable,3
+2029,Dry & Intermediate,25.04,Unsuitable,2
+2029,Cultivated gardens,25.04,Stable,4
+2029, wetlands,25.04,Suitable,1
+2029, streams,25.04,Stable,1
+2029,Forest edges,25.04,Stable,3
+2029,Forest margins,25.04,Stable,1
+2029,Scrublands,25.04,Stable,1
+2029,Wet lowlands,25.04,Suitable,2
+2029,Riverine margins,25.04,Stable,1
+2029,Riverine zones,25.04,Stable,1
+2029,Wet forest margins,25.04,Suitable,1
+2029,Coastal lowlands,25.04,Likely Suitable,1
+2029,Rainforest margins,25.04,Stable,1
+2029,Paddy margins,25.04,Stable,1
+2029,Disturbed soils,25.04,Stable,1
+2029, Wet gardens,25.04,Suitable,1
+2029,Riverbanks,25.04,Stable,1
+2029,Dry/intermediate scrublands,25.04,Unsuitable,4
+2029,"Dry zone, roadsides",25.04,Unsuitable,1
+2029,Wet/intermediate marshlands,25.04,Suitable,1
+2029,Dry/intermediate,25.04,Unsuitable,1
+2029,Wet/intermediate home gardens,25.04,Suitable,1
+2029,Dry/intermediate home gardens,25.04,Unsuitable,3
+2029,Wet/intermediate coastal zones,25.04,Suitable,1
+2029,Dry/intermediate forests,25.04,Unsuitable,2
+2029,Wet/intermediate,25.04,Suitable,1
+2029,Coastal/wet zones,25.04,Suitable,1
+2030,Dry,24.89,Unsuitable,173
+2030, Intermediate,24.89,Unsuitable,241
+2030, Wet lowlands,24.89,Suitable,2
+2030, Wet,24.89,Suitable,20
+2030,Wet,24.89,Suitable,68
+2030, Upcountry,24.89,Stable,8
+2030, Dry home gardens,24.89,Unsuitable,2
+2030, Dry zone margins,24.89,Unsuitable,1
+2030,Intermediate,24.89,Unsuitable,9
+2030, Dry,24.89,Unsuitable,18
+2030, Wet home gardens,24.89,Suitable,3
+2030, Arid,24.89,Stable,6
+2030,Dry tank-bunds,24.89,Unsuitable,3
+2030, cultivated,24.89,Stable,1
+2030,Dry grasslands,24.89,Unsuitable,4
+2030,Coastal,24.89,Likely Suitable,17
+2030,Intermediate riverbanks,24.89,Unsuitable,2
+2030, Dry riverine,24.89,Unsuitable,2
+2030,Coastal estuaries,24.89,Likely Suitable,3
+2030, lagoons,24.89,Stable,2
+2030,Coastal wetlands,24.89,Suitable,2
+2030, estuaries,24.89,Stable,2
+2030,Coastal mangroves,24.89,Likely Suitable,4
+2030,Coastal saline zones,24.89,Likely Suitable,2
+2030,Wet-Intermediate transitions,24.89,Suitable,2
+2030, low-country,24.89,Stable,2
+2030,Wet and Intermediate forests,24.89,Suitable,2
+2030,Lowland rainforest margins,24.89,Stable,2
+2030, roadsides/grasslands,24.89,Stable,1
+2030, cultivated and wild margins,24.89,Stable,1
+2030, home-garden margins,24.89,Stable,2
+2030, Wet forest margins,24.89,Suitable,2
+2030, scrublands/home fences,24.89,Stable,1
+2030, widely cultivated/home gardens,24.89,Stable,1
+2030, riverine and deciduous zones,24.89,Stable,1
+2030, Intermediate scrub and forest edges,24.89,Unsuitable,1
+2030, Intermediate lowlands,24.89,Unsuitable,2
+2030,Upcountry,24.89,Stable,5
+2030, Intermediate montane margins,24.89,Unsuitable,1
+2030, Intermediate forest margins,24.89,Unsuitable,2
+2030, Intermediate scrublands,24.89,Unsuitable,2
+2030, Intermediate forest edges,24.89,Unsuitable,1
+2030,Wet-zone forest margins,24.89,Suitable,1
+2030, Intermediate grasslands,24.89,Unsuitable,2
+2030, riverine margins,24.89,Stable,1
+2030,Wetlands,24.89,Suitable,11
+2030, paddy margins,24.89,Stable,3
+2030, lowlands,24.89,Stable,1
+2030,Tanks,24.89,Stable,2
+2030, ponds,24.89,Stable,3
+2030, slow freshwater bodies,24.89,Stable,1
+2030,Lakes,24.89,Stable,2
+2030, tanks,24.89,Stable,1
+2030, freshwater wetlands,24.89,Suitable,1
+2030,Marshes,24.89,Stable,4
+2030, stream edges,24.89,Stable,1
+2030, wet lowlands,24.89,Suitable,1
+2030, scrub margins,24.89,Stable,1
+2030, Wet forest edges,24.89,Suitable,1
+2030, Intermediate home gardens,24.89,Unsuitable,1
+2030, canals,24.89,Stable,2
+2030, paddy fields,24.89,Stable,1
+2030, marsh edges,24.89,Stable,1
+2030,Shallow freshwater wetlands,24.89,Suitable,1
+2030, Intermediate disturbed soils,24.89,Unsuitable,1
+2030,Wet and Intermediate zones,24.89,Suitable,5
+2030,Dry and Intermediate zones,24.89,Unsuitable,5
+2030,Cultivated,24.89,Stable,19
+2030, home gardens,24.89,Stable,2
+2030,Dry zone forests,24.89,Unsuitable,4
+2030,Intermediate and Dry zones,24.89,Unsuitable,3
+2030,Wet zone,24.89,Suitable,2
+2030,Upcountry wet zone,24.89,Suitable,2
+2030,Home gardens,24.89,Stable,8
+2030,Grasslands,24.89,Stable,3
+2030, common weed,24.89,Stable,1
+2030,Dry zone,24.89,Unsuitable,5
+2030,Dry and Arid zones,24.89,Unsuitable,1
+2030,Common weed,24.89,Stable,1
+2030,Lowland forests,24.89,Stable,1
+2030,Common grass,24.89,Stable,1
+2030,Coastal and Intermediate,24.89,Unsuitable,1
+2030,Moist lowlands,24.89,Stable,1
+2030,Coastal areas,24.89,Likely Suitable,1
+2030,Lowlands,24.89,Stable,1
+2030,Mangrove areas,24.89,Stable,1
+2030,Intermediate and Wet zones,24.89,Suitable,1
+2030,Wet zone plantations,24.89,Suitable,1
+2030,Wet zone forests,24.89,Suitable,1
+2030,Coastal and Lowland,24.89,Likely Suitable,1
+2030, marshes,24.89,Stable,1
+2030,Dry forests,24.89,Unsuitable,4
+2030,Dry scrublands,24.89,Unsuitable,8
+2030,Cultivated grains,24.89,Stable,1
+2030,Wet forests,24.89,Suitable,6
+2030,Wet & Intermediate,24.89,Suitable,3
+2030,Dry & Intermediate,24.89,Unsuitable,2
+2030,Cultivated gardens,24.89,Stable,4
+2030, wetlands,24.89,Suitable,1
+2030, streams,24.89,Stable,1
+2030,Forest edges,24.89,Stable,3
+2030,Forest margins,24.89,Stable,1
+2030,Scrublands,24.89,Stable,1
+2030,Wet lowlands,24.89,Suitable,2
+2030,Riverine margins,24.89,Stable,1
+2030,Riverine zones,24.89,Stable,1
+2030,Wet forest margins,24.89,Suitable,1
+2030,Coastal lowlands,24.89,Likely Suitable,1
+2030,Rainforest margins,24.89,Stable,1
+2030,Paddy margins,24.89,Stable,1
+2030,Disturbed soils,24.89,Stable,1
+2030, Wet gardens,24.89,Suitable,1
+2030,Riverbanks,24.89,Stable,1
+2030,Dry/intermediate scrublands,24.89,Unsuitable,4
+2030,"Dry zone, roadsides",24.89,Unsuitable,1
+2030,Wet/intermediate marshlands,24.89,Suitable,1
+2030,Dry/intermediate,24.89,Unsuitable,1
+2030,Wet/intermediate home gardens,24.89,Suitable,1
+2030,Dry/intermediate home gardens,24.89,Unsuitable,3
+2030,Wet/intermediate coastal zones,24.89,Suitable,1
+2030,Dry/intermediate forests,24.89,Unsuitable,2
+2030,Wet/intermediate,24.89,Suitable,1
+2030,Coastal/wet zones,24.89,Suitable,1
