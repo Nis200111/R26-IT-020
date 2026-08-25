@@ -71,5 +71,7 @@ All outputs will be saved in the working directory.
 - Develop a web dashboard for interactive exploration of predictions.
 
 ---
+##frontend hosting link
+https://frontend-steel-six-14.vercel.app/
 
 
