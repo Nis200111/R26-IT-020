@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Sri Lanka Medicinal Plant Climate Observatory</title>
+    <meta
+      name="description"
+      content="Forecast-driven medicinal plant habitat observatory for Sri Lanka."
+    />
+    <meta name="theme-color" content="#f6f4ea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+    <div class="aurora aurora-one"></div>
+    <div class="aurora aurora-two"></div>
+
+    <!-- Sticky Top Navigation Bar -->
+    <nav class="top-nav">
+      <div class="nav-container">
+        <a href="#" class="nav-brand">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/>
+            <path d="M12 6v6l4 2"/>
+            <path d="M7 17c2-2 3-5 5-5s3 3 5 5"/>
+          </svg>
+          <span>HerbHeal <small>Observatory</small></span>
+        </a>
+
+        <div class="nav-status">
+          <span class="pulse-dot"></span>
+          <span>Forecast Model Active <strong>2026–2030</strong></span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#dashboard">KPIs</a>
+          <a href="#sriLankaMap">Map</a>
+          <a href="#temperatureChart">Climate Forecasts</a>
+          <a href="#plantTableBody">Plant Catalog</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero reveal">
+      <p class="eyebrow">Data Science x Climate Forecasting x Traditional Medicine</p>
+      <h1>Sri Lanka Medicinal Plant Climate Observatory</h1>
+      <p class="hero-copy">
+        A predictive dashboard for doctors, Ayurvedic practitioners, medical students,
+        and botanical researchers to assess future medicinal plant habitat suitability
+        through 2030.
+      </p>
+      <div class="hero-actions">
+        <a href="#dashboard" class="btn btn-primary">Explore Dashboard</a>
+        <button id="downloadSuitabilityBtn" class="btn btn-ghost" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Export Filtered Suitability CSV
+        </button>
+      </div>
+    </header>
+
+    <main id="dashboard" class="dashboard">
+      <section class="kpi-grid reveal" id="kpiGrid">
+        <article class="kpi-card">
+          <div class="kpi-icon-wrap icon-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.1 2 9 0 5-4 9-10 9z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+          </div>
+          <div class="kpi-content">
+            <h2>Total Species Cataloged</h2>
+            <p id="kpiSpecies">-</p>
+            <span class="kpi-tag">Sri Lankan Flora</span>
+          </div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-icon-wrap icon-amber">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="kpi-content">
+            <h2>Forecast Horizon</h2>
+            <p id="kpiHorizon">-</p>
+            <span class="kpi-tag">Prophet Time-Series</span>
+          </div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-icon-wrap icon-rose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <div class="kpi-content">
+            <h2>Most Vulnerable Zone</h2>
+            <p id="kpiRiskZone">-</p>
+            <span class="kpi-tag">Highest Risk Factor</span>
+          </div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="kpi-icon-wrap icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <div class="kpi-content">
+            <h2>Avg Suitable Share</h2>
+            <p id="kpiSuitability">-</p>
+            <span class="kpi-tag">Overall Resilience</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel-grid reveal">
+        <article class="panel filter-panel">
+          <div class="filter-panel-header">
+            <h3>Clinical and Botanical Filter</h3>
+            <button id="toggleFiltersBtn" class="btn btn-toggle" type="button" aria-expanded="true" aria-controls="filterBody">
+              <span class="toggle-text">Hide Filters</span>
+              <span class="toggle-icon" aria-hidden="true">▼</span>
+            </button>
+          </div>
+          <div id="filterBody" class="filter-body">
+            <div class="filter-group">
+              <label for="yearFilter">Year</label>
+              <select id="yearFilter"></select>
+            </div>
+            <div class="filter-group">
+              <label for="statusFilter">Suitability Status</label>
+              <select id="statusFilter">
+                <option value="all">All</option>
+                <option value="Suitable">Suitable</option>
+                <option value="Likely Suitable">Likely Suitable</option>
+                <option value="Stable">Stable</option>
+                <option value="Unsuitable">Unsuitable</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="zoneFilter">Climate Zone</label>
+              <select id="zoneFilter">
+                <option value="all">All</option>
+                <option value="Dry">Dry</option>
+                <option value="Wet">Wet</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Coastal">Coastal</option>
+                <option value="Upcountry">Upcountry</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="plantSearch">Search Plant Name</label>
+              <input
+                id="plantSearch"
+                type="search"
+                placeholder="Scientific or Sinhala name"
+              />
+            </div>
+            <div class="filter-group">
+              <label for="clinicalFilter">Clinical Application</label>
+              <select id="clinicalFilter">
+                <option value="all">All</option>
+                <option value="anti-inflammatory">Anti-inflammatory</option>
+                <option value="respiratory">Respiratory Health</option>
+                <option value="digestive">Digestive Support</option>
+                <option value="wound-healing">Wound Healing</option>
+                <option value="metabolic">Metabolic Support</option>
+              </select>
+            </div>
+            <button id="resetFiltersBtn" class="btn btn-subtle" type="button">Reset Filters</button>
+          </div>
+        </article>
+
+        <article class="panel map-panel">
+          <div class="panel-head">
+            <div>
+              <h3>Interactive Geospatial Mapping</h3>
+              <p>Projected zone stability profile for selected year.</p>
+            </div>
+            <span class="scroll-hint">↔ Scroll map / swipe left-right</span>
+          </div>
+          <div id="sriLankaMap" aria-label="Sri Lanka climate suitability map"></div>
+          <p class="footnote">
+            Circle size indicates plant count represented by matched habitats.
+            Circle color indicates suitability pressure.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel-grid reveal">
+        <article class="panel chart-panel">
+          <h3>Forecasted Temperature Through 2030</h3>
+          <div class="chart-container">
+            <canvas id="temperatureChart"></canvas>
+          </div>
+        </article>
+        <article class="panel chart-panel chart-panel-compact">
+          <h3>Forecasted Precipitation Through 2030</h3>
+          <div class="chart-container">
+            <canvas id="precipitationChart"></canvas>
+          </div>
+        </article>
+      </section>
+
+      <!-- Farmer Cultivation & Botanical Advisory Simulator -->
+      <section class="panel quiz-panel reveal" id="cultivationSimulator">
+        <div class="panel-head">
+          <div>
+            <h3>Farmer Cultivation & Botanical Advisory Simulator</h3>
+            <p>Input your land parameters to run the 2026–2030 predictive model for high-yield medicinal crop recommendations.</p>
+          </div>
+          <span class="badge badge-endemic">Interactive Model</span>
+        </div>
+
+        <div class="quiz-grid">
+          <div class="filter-group">
+            <label for="simDistrict">District / Location</label>
+            <select id="simDistrict">
+              <option value="Anuradhapura">Anuradhapura (Dry Zone)</option>
+              <option value="Kandy">Kandy (Intermediate Zone)</option>
+              <option value="Colombo">Colombo (Wet Zone)</option>
+              <option value="Galle">Galle (Southern Coastal / Wet)</option>
+              <option value="Nuwara Eliya">Nuwara Eliya (Upcountry / Montane)</option>
+              <option value="Jaffna">Jaffna (Northern Dry / Coastal)</option>
+              <option value="Badulla">Badulla (Uva Intermediate)</option>
+              <option value="Kurunegala">Kurunegala (Intermediate Belt)</option>
+              <option value="Hambantota">Hambantota (Arid Dry Zone)</option>
+              <option value="Ratnapura">Ratnapura (Wet Sabaragamuwa)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="simSoil">Soil Type</label>
+            <select id="simSoil">
+              <option value="Latosols">Red-Yellow Latosols (Well Drained)</option>
+              <option value="Alluvial">Alluvial Soil (River Basin / Fertile)</option>
+              <option value="Podzolic">Red-Yellow Podzolic (Montane / Acidic)</option>
+              <option value="Regosols">Sandy Regosols (Coastal / Dry)</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="simWater">Water / Irrigation Access</label>
+            <select id="simWater">
+              <option value="rainfed">Rain-fed Only (Monsoon Dependent)</option>
+              <option value="irrigation">Well / Drip Irrigation Available</option>
+              <option value="reservoir">Perennial Stream / Reservoir Access</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="simGoal">Cultivation Goal</label>
+            <select id="simGoal">
+              <option value="commercial">Commercial High Demand (Market Ready)</option>
+              <option value="conservation">Endangered / Vulnerable Species Conservation</option>
+              <option value="ayurvedic">Essential Ayurvedic Home / Clinical Herbs</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="quiz-actions">
+          <button id="runSimulatorBtn" class="btn btn-primary" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Run Predictive Model Simulator
+          </button>
+        </div>
+
+        <div id="quizResultsContainer" class="quiz-results-wrap" style="display: none;">
+          <h4 class="results-title">Top Recommended Medicinal Crops for <span id="resDistrictName">Anuradhapura</span> (2026–2030)</h4>
+          <div id="quizResultsGrid" class="crop-results-grid">
+            <!-- Dynamic Crop Cards -->
+          </div>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="panel-head">
+          <h3>Suitability Trends by Year</h3>
+          <p>Yearly habitat-group status counts from the generated prediction file.</p>
+        </div>
+        <div class="chart-container">
+          <canvas id="suitabilityChart"></canvas>
+        </div>
+      </section>
+
+      <section class="panel reveal">
+        <div class="panel-head">
+          <div>
+            <h3>Medicinal Plant Browser</h3>
+            <p>Filtered by habitat-zone context and clinical use tags. 💡 <em>Click any row to open the Botanical Profile Modal.</em></p>
+          </div>
+          <span class="scroll-hint">↔ Scroll table left / right</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Scientific Name</th>
+                <th>Sinhala Name</th>
+                <th>Primary Habitat</th>
+                <th>Clinical Tag</th>
+                <th>Selected Year Status</th>
+              </tr>
+            </thead>
+            <tbody id="plantTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Botanical Profile Modal -->
+    <div id="plantModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modalScientificName">
+      <div class="modal-card">
+        <div class="modal-drag-handle" aria-hidden="true"></div>
+        <button id="closeModalBtn" class="modal-close-btn" type="button" aria-label="Close modal">&times;</button>
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <span id="modalEndemicBadge" class="badge badge-endemic">Native</span>
+            <h2 id="modalScientificName">Scientific Name</h2>
+            <p id="modalSinhalaName" class="modal-subtitle">Sinhala Name</p>
+          </div>
+        </div>
+        
+        <div class="modal-grid">
+          <div class="modal-section">
+            <h4>Botanical & Clinical Profile</h4>
+            <div class="modal-meta-list">
+              <div class="meta-item">
+                <span class="meta-label">Family</span>
+                <span id="modalFamily" class="meta-value">-</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Primary Zone</span>
+                <span id="modalZone" class="meta-value">-</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Parts Used</span>
+                <span id="modalParts" class="meta-value">-</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Formulations</span>
+                <span id="modalFormulations" class="meta-value">-</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <h4>2026–2030 Habitat Horizon</h4>
+            <div id="modalYearList" class="year-horizon-grid">
+              <!-- Dynamically populated year pills -->
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="modal-note">
+            <span class="note-icon">🌱</span>
+            <p id="modalConservationNote">Recommended for in-situ habitat protection and botanical garden germplasm conservation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer reveal">
+      <p>
+        Our vision: empower Sri Lanka's medical and scientific community with predictive
+        tools to protect medicinal biodiversity for future generations.
+      </p>
+    </footer>
+
+    <!-- Fixed Mobile Bottom App Navigation Bar -->
+    <nav class="mobile-bottom-nav" aria-label="Mobile App Navigation">
+      <a href="#dashboard" class="mobile-tab active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#sriLankaMap" class="mobile-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+          <line x1="8" y1="2" x2="8" y2="18"/>
+          <line x1="16" y1="6" x2="16" y2="22"/>
+        </svg>
+        <span>Map</span>
+      </a>
+      <a href="#temperatureChart" class="mobile-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="20" x2="18" y2="10"/>
+          <line x1="12" y1="20" x2="12" y2="4"/>
+          <line x1="6" y1="20" x2="6" y2="14"/>
+        </svg>
+        <span>Trends</span>
+      </a>
+      <a href="#cultivationSimulator" class="mobile-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v8"/>
+          <path d="M4.93 10.93a10 10 0 0 1 14.14 0"/>
+          <path d="M2 18h20"/>
+        </svg>
+        <span>Simulator</span>
+      </a>
+      <a href="#plantTableBody" class="mobile-tab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        <span>Catalog</span>
+      </a>
+    </nav>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
